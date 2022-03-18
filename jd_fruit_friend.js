@@ -25,7 +25,7 @@ cron "10 2 * * *" script-path=jd_fruit_friend.js,tag=东东农场好友删减奖
 */
 const $ = new Env('东东农场好友删减奖励');
 let cookiesArr = [], cookie = '', isBox = false, notify,allMessage = '';
-let newShareCodes=[];
+let newShareCodes=[ '9c5efb80faef4bf3917dae9ebdc90086@646fc6c8c5504c94b2136f9ef3e6fbfe@b119a1686c5d416787075dd224bb8997',];
 let message = '', subTitle = '', option = {}, isFruitFinished = false;
 const retainWater = $.isNode() ? (process.env.retainWater ? process.env.retainWater : 100) : ($.getdata('retainWater') ? $.getdata('retainWater') : 100);//保留水滴大于多少g,默认100g;
 let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
